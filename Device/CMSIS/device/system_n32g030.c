@@ -66,7 +66,7 @@
 #define SYSCLK_USE_LSI     5
 
 #ifndef SYSCLK_FREQ
-#define SYSCLK_FREQ 48000000
+#define SYSCLK_FREQ 24000000//48000000
 #endif
 
 /*
