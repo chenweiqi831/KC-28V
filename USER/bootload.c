@@ -470,9 +470,10 @@ void Bootload_Decode(uint8_t *pBuf)
 		UartRxEnable();
 		if (cmd == CMD72 && result == 0)//跳转到应用程序
 		{
-			Bootload_WriteUpgradeMark(0);		// 清除boot标志数据
+			//Bootload_WriteUpgradeMark(0);		// 清除boot标志数据
 			Delay10us(250);
-			HwMcuReset();
+			//HwMcuReset();
+			Bootload_Required();
 		}		
 	}
 	
